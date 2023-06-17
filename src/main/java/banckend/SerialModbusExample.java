@@ -31,8 +31,7 @@ public class SerialModbusExample {
     }
 
     private void modbusSerialMaster() {
-
-
+        
         String[] slaveIDS = dotenv.get("SLAVE_IDS").split(",");
         ModbusSerialMaster modbusMaster = new ModbusSerialMaster(serialParameters());
 
